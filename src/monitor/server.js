@@ -1,14 +1,13 @@
 const axios = require('axios');
 const Totalvoice = require('totalvoice-node');
-require('dotenv')
-const client = new Totalvoice(process.env.TOTALVOICE_KEY);
+const client = new Totalvoice('acessToken');
 const servers = [
     {
         name:'Servidor 1',
         url:'http://localhost:3001',
         developer:{
             name:'Joao victor',
-            telefone:process.env.TELEFONE
+            telefone:'telefone'
         },
     },
     {
@@ -16,7 +15,7 @@ const servers = [
         url:'http://localhost:3002',
         developer:{
             name:'Joao victor',
-            telefone:process.env.TELEFONE
+            telefone:'telefone'
         },
     }
 ]   
